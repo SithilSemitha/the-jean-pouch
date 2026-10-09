@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Jean Pouch | Donate denim, shop what it becomes</title>
+  <meta name="description" content="Donate jeans, jackets and denim of any kind. We cut and sew it into pouches, totes and bottle slings you can buy.">
+  <meta name="theme-color" content="#16233f">
+  <meta property="og:title" content="The Jean Pouch">
+  <meta property="og:description" content="Donate denim of any kind. Shop the pouches, totes and slings it becomes.">
+  <meta property="og:type" content="website">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Figtree:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;600;700&family=Noto+Sans+Tamil:wght@400;600;700&family=Noto+Serif+Sinhala:wght@600;700&family=Noto+Serif+Tamil:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/boot.js"></script>
+</head>
+<body>
+  <div class="splash twill-deep" id="splash" aria-hidden="true">
+    <svg class="splash-bag" viewBox="0 0 240 250" role="presentation">
+      <defs><clipPath id="splash-clip"><path d="M40 92h160l14 138H26z"/></clipPath></defs>
+      <path class="splash-handle" pathLength="1" d="M82 100V64a38 38 0 0 1 76 0v36" fill="none" stroke="#93adcf" stroke-width="11" stroke-linecap="round"/>
+      <g class="splash-body">
+        <g clip-path="url(#splash-clip)">
+          <rect x="26" y="92" width="188" height="138" fill="#34558a"/>
+          <rect class="splash-patch p1" x="110" y="92" width="104" height="72" fill="#5c7fb0"/>
+          <rect class="splash-patch p2" x="110" y="164" width="52" height="66" fill="#93adcf"/>
+          <rect class="splash-patch p3" x="162" y="164" width="52" height="66" fill="#2a4474"/>
+        </g>
+        <path d="M40 92h160v13H40z" fill="#22375f"/>
+      </g>
+      <g class="splash-stitch" fill="none" stroke="#e0a53a" stroke-width="2.2" stroke-dasharray="6 5">
+        <path d="M46 98.5h148M110 108v118M110 164h100M162 164v62"/>
+      </g>
+      <g class="splash-tag">
+        <rect x="48" y="188" width="42" height="24" rx="3" fill="#c98a4f"/>
+        <rect x="52" y="192" width="34" height="16" rx="2" fill="none" stroke="#7a431c" stroke-width="1" stroke-dasharray="3 2"/>
+      </g>
+    </svg>
+    <p class="splash-name">The Jean Pouch</p>
+    <p class="splash-line" data-i18n="tagline">Donated denim, sewn into something new.</p>
+  </div>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+  <div class="topbar">
+    <div class="wrap topbar-row">
+      <div class="lang-switch" id="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en" lang="en">English</button>
+        <button type="button" data-lang="si" lang="si">සිංහල</button>
+        <button type="button" data-lang="ta" lang="ta">தமிழ்</button>
+      </div>
+      <button type="button" class="theme-toggle" id="theme-toggle"><span class="theme-icon" aria-hidden="true"></span><span id="theme-label">Dark mode</span></button>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-row">
+      <a class="brand" href="#home" aria-label="The Jean Pouch">
+        <svg class="brand-mark" viewBox="0 0 40 44" aria-hidden="true">
+          <path d="M3 3h34v26L20 41 3 29z" fill="#2f4b7c"/>
+          <path d="M7 7h26v20L20 36 7 27z" fill="none" stroke="#e0a53a" stroke-width="1.6" stroke-dasharray="3 2.4"/>
+          <circle cx="7" cy="7" r="2.2" fill="#b86a34"/><circle cx="33" cy="7" r="2.2" fill="#b86a34"/>
+        </svg>
+        <span class="brand-name">The Jean Pouch</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n="menu">Menu</button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#home" data-i18n="nav.home">Home</a>
+        <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#donate" data-i18n="nav.donate">Donate denim</a>
+        <a href="#shop" data-i18n="nav.shop">Shop</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <button class="cart-button" type="button" id="open-cart" aria-haspopup="dialog">
+        <span data-i18n="bag">Bag</span> <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero twill-deep" data-page="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 data-i18n="hero.title">Your old jeans have another life in them.</h1>
+          <p class="lede" data-i18n="hero.lede">Give us denim of any kind, in any condition. We cut it, line it and sew it into pouches, totes and bottle slings, then sell them here to keep the workshop running.</p>
+          <div class="hero-actions">
+            <a class="btn btn-thread" href="#donate" data-i18n="hero.donate">Donate denim</a>
+            <a class="btn btn-ghost" href="#shop" data-i18n="hero.shop">Shop the pouches</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 420 460" role="presentation">
+            <defs>
+              <pattern id="tw" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <rect width="6" height="6" fill="#3a5a8f"/><rect width="2" height="6" fill="#33507f"/>
+              </pattern>
+              <pattern id="tw2" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <rect width="6" height="6" fill="#7f9cc2"/><rect width="2" height="6" fill="#7392ba"/>
+              </pattern>
+              <clipPath id="pc"><rect x="95" y="38" width="230" height="130" rx="22"/></clipPath>
+            </defs>
+            <!-- pouch tucked in the pocket -->
+            <g transform="rotate(-7 210 110)">
+              <g clip-path="url(#pc)">
+                <rect x="95" y="38" width="230" height="130" fill="url(#tw2)"/>
+                <rect x="95" y="38" width="80" height="130" fill="#294372"/>
+                <rect x="250" y="38" width="75" height="130" fill="#4d6fa3"/>
+                <rect x="175" y="100" width="75" height="68" fill="#1c2e54"/>
+              </g>
+              <path d="M175 40v126M250 40v126M175 100h75" stroke="#e0a53a" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+              <rect x="95" y="38" width="230" height="16" rx="8" fill="#b86a34"/>
+              <path d="M104 46h212" stroke="#f2d39a" stroke-width="2" stroke-dasharray="2 4"/>
+              <rect x="300" y="40" width="34" height="12" rx="6" fill="#e0a53a"/>
+            </g>
+            <!-- back pocket -->
+            <path d="M40 130h340v210L210 440 40 340z" fill="url(#tw)"/>
+            <path d="M40 130h340v22H40z" fill="#2b4675"/>
+            <path d="M54 164h312v168L210 422 54 332z" fill="none" stroke="#e0a53a" stroke-width="2.6" stroke-dasharray="9 6"/>
+            <path d="M66 176h288v150L210 408 66 326z" fill="none" stroke="#e0a53a" stroke-width="2.6" stroke-dasharray="9 6"/>
+            <path d="M66 250q72-46 144 0t144 0" fill="none" stroke="#e0a53a" stroke-width="2.6" stroke-dasharray="9 6"/>
+            <path d="M48 141h324" stroke="#e0a53a" stroke-width="2.2" stroke-dasharray="9 6"/>
+            <circle cx="56" cy="141" r="8" fill="#b86a34"/><circle cx="56" cy="141" r="3.4" fill="#8a4a20"/>
+            <circle cx="364" cy="141" r="8" fill="#b86a34"/><circle cx="364" cy="141" r="3.4" fill="#8a4a20"/>
+            <!-- leather patch -->
+            <g transform="rotate(4 280 330)">
+              <rect x="222" y="300" width="118" height="56" rx="5" fill="#c98a4f"/>
+              <rect x="228" y="306" width="106" height="44" rx="3" fill="none" stroke="#7a431c" stroke-width="1.4" stroke-dasharray="4 3"/>
+              <text x="281" y="325" text-anchor="middle" font-family="Zilla Slab, Georgia, serif" font-weight="700" font-size="13" fill="#4a2810">The Jean Pouch</text>
+              <text x="281" y="341" text-anchor="middle" font-family="Figtree, Arial, sans-serif" font-size="9.5" fill="#4a2810">sewn from donated denim</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="selvedge" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" data-page="home">
+      <div class="wrap">
+        <div class="start-head">
+          <h2 data-i18n="home.start.title">Where would you like to start?</h2>
+          <p data-i18n="home.start.text">Give denim, buy what it became, or see how one turns into the other.</p>
+        </div>
+        <ul class="start-cards">
+          <li>
+            <a class="start-card start-donate" href="#donate">
+              <span class="start-art"><svg viewBox="0 0 200 130" aria-hidden="true">
+                <rect x="52" y="34" width="96" height="16" rx="4" fill="#93adcf"/><path d="M58 42h84" stroke="#e0a53a" stroke-width="1.6" stroke-dasharray="5 4"/>
+                <rect x="46" y="48" width="108" height="16" rx="4" fill="#5c7fb0"/><path d="M52 56h96" stroke="#e0a53a" stroke-width="1.6" stroke-dasharray="5 4"/>
+                <rect x="56" y="20" width="88" height="16" rx="4" fill="#c7d3e3"/><path d="M62 28h76" stroke="#b86a34" stroke-width="1.6" stroke-dasharray="5 4"/>
+                <path d="M30 62h140l-10 52H40z" fill="#c98a4f"/><path d="M30 62h140l-3 14H33z" fill="#a86f3a"/>
+                <path d="M46 86h108M49 100h102" stroke="#7a431c" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+              </svg></span>
+              <span class="start-body">
+                <span class="start-title" data-i18n="nav.donate">Donate denim</span>
+                <span class="start-text" data-i18n="home.donate.text">Jeans, jackets, scraps. Any kind, any condition.</span>
+                <span class="btn btn-thread start-cta" data-i18n="home.donate.cta">Start a donation</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="start-card start-shop" href="#shop">
+              <span class="start-art"><svg viewBox="0 0 200 130" aria-hidden="true">
+                <path d="M62 52V36a22 22 0 0 1 44 0v16" fill="none" stroke="#93adcf" stroke-width="7"/>
+                <path d="M40 50h88l8 66H32z" fill="#5c7fb0"/><path d="M84 50h44l8 66H84z" fill="#93adcf"/><path d="M84 84h50l3 32H84z" fill="#2f4b7c"/>
+                <path d="M40 50h88v8H40z" fill="#22375f"/><path d="M84 60v54M84 84h48" stroke="#e0a53a" stroke-width="1.8" stroke-dasharray="5 4"/>
+                <rect x="118" y="78" width="60" height="38" rx="8" fill="#c7d3e3"/><rect x="118" y="78" width="60" height="7" rx="3.5" fill="#b86a34"/>
+                <path d="M148 88v26" stroke="#e0a53a" stroke-width="1.6" stroke-dasharray="4 3"/><rect x="124" y="98" width="14" height="9" rx="1.5" fill="#c98a4f"/>
+              </svg></span>
+              <span class="start-body">
+                <span class="start-title" data-i18n="nav.shop">Shop</span>
+                <span class="start-text" data-i18n="home.shop.text">Pouches, totes and slings, each one different.</span>
+                <span class="btn btn-outline start-cta" data-i18n="cart.browse">Browse the shop</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="start-card start-how" href="#how">
+              <span class="start-art"><svg viewBox="0 0 200 130" aria-hidden="true">
+                <path d="M22 22h46l5 88H52l-7-52-7 52H17z" fill="#22375f"/><path d="M22 32h46" stroke="#e0a53a" stroke-width="1.8" stroke-dasharray="5 4"/>
+                <path d="M84 66h34" stroke="#f8fafc" stroke-width="2.4" stroke-dasharray="6 5"/><path d="M114 58l10 8-10 8" fill="none" stroke="#f8fafc" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="132" y="42" width="54" height="50" rx="9" fill="#2f4b7c"/><path d="M159 42h18a9 9 0 0 1 9 9v32a9 9 0 0 1-9 9h-18z" fill="#16233f"/>
+                <rect x="132" y="42" width="54" height="8" rx="4" fill="#b86a34"/><path d="M159 52v38" stroke="#e0a53a" stroke-width="1.8" stroke-dasharray="5 4"/>
+                <rect x="138" y="72" width="13" height="9" rx="1.5" fill="#c98a4f"/>
+              </svg></span>
+              <span class="start-body">
+                <span class="start-title" data-i18n="nav.how">How it works</span>
+                <span class="start-text" data-i18n="home.how.text">See how a pair of jeans becomes a pouch.</span>
+                <span class="btn btn-outline start-cta" data-i18n="home.how.cta">See the four steps</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-tint" data-page="home">
+      <div class="wrap">
+        <div class="shop-head">
+          <h2 data-i18n="home.featured">New from the workshop</h2>
+          <a class="btn btn-outline" href="#shop" data-i18n="home.seeAll">See all products</a>
+        </div>
+        <ul class="products" id="featured"></ul>
+      </div>
+    </section>
+
+    <section class="section page" id="how" data-page="how">
+      <div class="wrap">
+        <div class="page-head">
+          <h2 data-i18n="how.title">From your wardrobe to someone's bag</h2>
+          <p class="page-lede" data-i18n="how.lede">Four steps take a pair of jeans from the back of your wardrobe to a finished pouch. Here is what happens at each one, and what we need from you.</p>
+          <div class="hero-actions">
+            <a class="btn btn-thread" href="#donate" data-i18n="hero.donate">Donate denim</a>
+            <a class="btn btn-outline" href="#shop" data-i18n="hero.shop">Shop the pouches</a>
+          </div>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-step">
+            <div class="timeline-body">
+              <span class="role role-you" data-i18n="how.you">Your part</span>
+              <h3 data-i18n="how.1.title">You hand over denim</h3>
+              <p data-i18n="how.1.text">Jeans, jackets, skirts, shorts, offcuts. Ripped knees and broken zips are fine. Drop it off, post it, or ask for a pickup.</p>
+              <p class="tip" data-i18n="how.1.tip">Takes about two minutes: fill in the donation form and choose drop-off, pickup or post.</p>
+            </div>
+            <svg class="timeline-icon" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="32" fill="#2f4b7c"/><path d="M20 12h24l3 40H35l-3-22-3 22H17z" fill="#93adcf"/><path d="M20 18h24" stroke="#e0a53a" stroke-width="2" stroke-dasharray="3 2.5"/></svg>
+          </li>
+          <li class="timeline-step">
+            <div class="timeline-body">
+              <span class="role role-us" data-i18n="how.us">Our part</span>
+              <h3 data-i18n="how.2.title">We sort, wash and cut</h3>
+              <p data-i18n="how.2.text">Every piece is washed, unpicked at the seams and cut into panels. Pockets, waistbands and hems get saved for details.</p>
+              <p class="tip" data-i18n="how.2.tip">Nothing usable is thrown away. Even zips and buttons are kept for reuse.</p>
+            </div>
+            <svg class="timeline-icon" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="32" fill="#2f4b7c"/><circle cx="22" cy="44" r="7" fill="none" stroke="#93adcf" stroke-width="4"/><circle cx="42" cy="44" r="7" fill="none" stroke="#93adcf" stroke-width="4"/><path d="M26 38L44 12M38 38L20 12" stroke="#c7d3e3" stroke-width="4" stroke-linecap="round"/></svg>
+          </li>
+          <li class="timeline-step">
+            <div class="timeline-body">
+              <span class="role role-us" data-i18n="how.us">Our part</span>
+              <h3 data-i18n="how.3.title">It gets sewn into something useful</h3>
+              <p data-i18n="how.3.text">Panels are patched together, lined with cotton and stitched into pouches, totes and slings. No two come out the same.</p>
+              <p class="tip" data-i18n="how.3.tip">Each piece is lined with cotton and checked at the seams before it goes on sale.</p>
+            </div>
+            <svg class="timeline-icon" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="32" fill="#2f4b7c"/><path d="M14 50L46 18" stroke="#c7d3e3" stroke-width="4" stroke-linecap="round"/><circle cx="45" cy="19" r="2" fill="#16233f"/><path d="M46 18c8 4 6 16-4 18s-14 10-6 16" fill="none" stroke="#e0a53a" stroke-width="2.4" stroke-dasharray="4 3"/></svg>
+          </li>
+          <li class="timeline-step">
+            <div class="timeline-body">
+              <span class="role role-you" data-i18n="how.you">Your part</span>
+              <h3 data-i18n="how.4.title">You shop, the workshop keeps going</h3>
+              <p data-i18n="how.4.text">Every sale pays for thread, lining and the hands that sew. What we cannot use is passed on for fibre recycling.</p>
+              <p class="tip" data-i18n="how.4.tip">Add what you like to your bag and place the order. We confirm delivery with you.</p>
+            </div>
+            <svg class="timeline-icon" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="32" fill="#2f4b7c"/><path d="M24 26v-6a8 8 0 0 1 16 0v6" fill="none" stroke="#c7d3e3" stroke-width="4"/><path d="M16 26h32l3 26H13z" fill="#93adcf"/><path d="M18 31h28" stroke="#e0a53a" stroke-width="2" stroke-dasharray="3 2.5"/></svg>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-tint" data-page="how">
+      <div class="wrap parts-grid">
+        <div>
+          <h2 data-i18n="parts.title">What one pair of jeans becomes</h2>
+          <p data-i18n="parts.intro">Every part of a pair of jeans has a job in the workshop.</p>
+        </div>
+        <ul class="parts">
+          <li><strong data-i18n="parts.1.from">Legs</strong><span class="parts-arrow" aria-hidden="true"></span><span data-i18n="parts.1.to">Main panels for totes, sleeves and pencil cases</span></li>
+          <li><strong data-i18n="parts.2.from">Back pockets</strong><span class="parts-arrow" aria-hidden="true"></span><span data-i18n="parts.2.to">The front of a back-pocket pouch, rivets and all</span></li>
+          <li><strong data-i18n="parts.3.from">Waistband</strong><span class="parts-arrow" aria-hidden="true"></span><span data-i18n="parts.3.to">Handles and straps</span></li>
+          <li><strong data-i18n="parts.4.from">Hems and seams</strong><span class="parts-arrow" aria-hidden="true"></span><span data-i18n="parts.4.to">Trims, loops and zip pulls</span></li>
+          <li><strong data-i18n="parts.5.from">Small offcuts</strong><span class="parts-arrow" aria-hidden="true"></span><span data-i18n="parts.5.to">Coin purses, or fibre recycling when too small to sew</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" data-page="how">
+      <div class="wrap prep-grid">
+        <div class="card card-raised stitched prep">
+          <h2 data-i18n="prep.title">Before you donate</h2>
+          <ul class="checklist">
+            <li data-i18n="prep.1">Wash and fully dry each piece</li>
+            <li data-i18n="prep.2">Empty the pockets</li>
+            <li data-i18n="prep.3">Leave zips, buttons and patches on</li>
+            <li data-i18n="prep.4">Put everything in one bag or box</li>
+            <li data-i18n="prep.5">No need to repair or iron anything</li>
+          </ul>
+        </div>
+        <div>
+          <h2 data-i18n="faq.title">Questions people ask</h2>
+          <div class="faq">
+            <details>
+              <summary><span data-i18n="faq.1.q">Do you take torn or stained denim?</span></summary>
+              <p data-i18n="faq.1.a">Yes. We cut around damage, so ripped knees, broken zips and stains are all fine. We only turn away fabric that is wet or mouldy.</p>
+            </details>
+            <details>
+              <summary><span data-i18n="faq.2.q">Is there a minimum amount?</span></summary>
+              <p data-i18n="faq.2.a">No. One pair of jeans is enough. For large amounts, such as a school or office collection, message us first so we can plan.</p>
+            </details>
+            <details>
+              <summary><span data-i18n="faq.3.q">What happens to denim you cannot use?</span></summary>
+              <p data-i18n="faq.3.a">Pieces too small or too worn to sew are passed on for fibre recycling. Nothing from the workshop goes to landfill.</p>
+            </details>
+            <details>
+              <summary><span data-i18n="faq.4.q">Why does my pouch look different from the picture?</span></summary>
+              <p data-i18n="faq.4.a">Each one is cut from different jeans, so the shades and patch layout vary. The size, lining and build are the same.</p>
+            </details>
+            <details>
+              <summary><span data-i18n="faq.5.q">Can you make something from my own jeans?</span></summary>
+              <p data-i18n="faq.5.a">Yes. Choose Custom order on the Contact page and tell us what you have in mind.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="twill-mid page-cta" data-page="how">
+      <div class="wrap footer-cta">
+        <div>
+          <h2 data-i18n="how.cta.title">Ready when you are</h2>
+          <p data-i18n="how.cta.text">Start with the denim you already have, or see what earlier donations became.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-thread" href="#donate" data-i18n="hero.donate">Donate denim</a>
+          <a class="btn btn-ghost" href="#shop" data-i18n="hero.shop">Shop the pouches</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section twill-mid page" id="donate" data-page="donate">
+      <div class="wrap donate-grid">
+        <div class="donate-intro">
+          <h2 data-i18n="donate.title">Donate denim</h2>
+          <p data-i18n="donate.intro">Tell us what you have and how you would like to get it to us. We reply within two working days to confirm.</p>
+          <h3 data-i18n="donate.takes">We take</h3>
+          <ul class="takes">
+            <li data-i18n="donate.take1">Jeans of any cut, colour or size</li>
+            <li data-i18n="donate.take2">Denim jackets, shirts, skirts, shorts and dungarees</li>
+            <li data-i18n="donate.take3">Stretch denim and coloured denim</li>
+            <li data-i18n="donate.take4">Torn, stained or faded pieces</li>
+            <li data-i18n="donate.take5">Offcuts and tailoring scraps</li>
+          </ul>
+          <p class="note" data-i18n="donate.wash">Please wash items before donating. We cannot take wet or mouldy fabric.</p>
+          <h3 data-i18n="donate.dropoffs">Drop-off points</h3>
+          <ul class="dropoffs" id="dropoffs"></ul>
+        </div>
+
+        <form class="card stitched donate-form" id="donate-form" name="denim-donation" method="POST" data-netlify="true" netlify-honeypot="company" novalidate>
+          <input type="hidden" name="form-name" value="denim-donation">
+          <p class="hp" aria-hidden="true"><label>Leave empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
+
+          <fieldset>
+            <legend data-i18n="donate.what">What are you donating?</legend>
+            <div class="chips">
+              <label><input type="checkbox" name="items" value="Jeans"><span data-i18n="item.jeans">Jeans</span></label>
+              <label><input type="checkbox" name="items" value="Jackets"><span data-i18n="item.jackets">Jackets</span></label>
+              <label><input type="checkbox" name="items" value="Shirts"><span data-i18n="item.shirts">Shirts</span></label>
+              <label><input type="checkbox" name="items" value="Skirts or shorts"><span data-i18n="item.skirts">Skirts or shorts</span></label>
+              <label><input type="checkbox" name="items" value="Dungarees"><span data-i18n="item.dungarees">Dungarees</span></label>
+              <label><input type="checkbox" name="items" value="Scraps and offcuts"><span data-i18n="item.scraps">Scraps and offcuts</span></label>
+            </div>
+            <p class="error" id="err-items" hidden data-i18n="donate.errItems">Pick at least one kind of denim.</p>
+          </fieldset>
+
+          <div class="row">
+            <label class="field"><span data-i18n="donate.qty">Roughly how many pieces?</span>
+              <input type="number" id="donate-quantity" name="quantity" min="1" max="500" value="3" required inputmode="numeric">
+            </label>
+            <label class="field"><span data-i18n="donate.condition">Condition</span>
+              <select id="donate-condition" name="condition">
+                <option value="Good, still wearable" data-i18n="cond.good">Good, still wearable</option>
+                <option value="Worn or faded" data-i18n="cond.worn">Worn or faded</option>
+                <option value="Torn or damaged" data-i18n="cond.torn">Torn or damaged</option>
+                <option value="Mixed" data-i18n="cond.mixed">Mixed</option>
+              </select>
+            </label>
+          </div>
+
+          <fieldset>
+            <legend data-i18n="donate.method">How will it reach us?</legend>
+            <div class="chips">
+              <label><input type="radio" name="method" value="Drop-off" checked><span data-i18n="method.dropoff">I'll drop it off</span></label>
+              <label><input type="radio" name="method" value="Pickup"><span data-i18n="method.pickup">Pick it up from me</span></label>
+              <label><input type="radio" name="method" value="Post"><span data-i18n="method.post">I'll post it</span></label>
+            </div>
+          </fieldset>
+
+          <label class="field" id="address-field" hidden><span data-i18n="donate.address">Pickup address</span>
+            <textarea id="donate-address" name="address" rows="2" autocomplete="street-address"></textarea>
+            <span class="error" id="err-address" hidden data-i18n="donate.errAddress">Add the address we should collect from.</span>
+          </label>
+
+          <div class="row">
+            <label class="field"><span data-i18n="form.name">Your name</span>
+              <input type="text" id="donate-name" name="name" required autocomplete="name">
+              <span class="error" id="err-name" hidden data-i18n="donate.errName">Add your name.</span>
+            </label>
+            <label class="field"><span data-i18n="donate.contact">Phone or email</span>
+              <input type="text" id="donate-contact" name="contact" required autocomplete="email">
+              <span class="error" id="err-contact" hidden data-i18n="donate.errContact">Add a phone number or email so we can confirm.</span>
+            </label>
+          </div>
+
+          <label class="field"><span data-i18n="donate.notes">Anything else we should know?</span> <span class="optional" data-i18n="form.optional">(optional)</span>
+            <textarea id="donate-notes" name="notes" rows="2"></textarea>
+          </label>
+
+          <button class="btn btn-thread btn-block" type="submit" data-i18n="donate.submit">Send donation details</button>
+          <p class="form-status" id="donate-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section page" id="shop" data-page="shop">
+      <div class="wrap">
+        <div class="shop-head">
+          <div>
+            <h2 data-i18n="shop.title">Made from donated denim</h2>
+            <p data-i18n="shop.sub">Each piece is cut from different jeans, so the one you receive will differ a little from the picture.</p>
+          </div>
+          <div class="filters" id="filters" role="group"></div>
+        </div>
+        <ul class="products" id="products"></ul>
+      </div>
+    </section>
+
+    <section class="section twill-deep page" id="about" data-page="about">
+      <div class="wrap about-grid">
+        <div class="page-head">
+          <h2 data-i18n="about.title">About The Jean Pouch</h2>
+          <p class="page-lede" data-i18n="about.p2">The Jean Pouch is a small sewing workshop. We take in denim people no longer want, and turn it into things that get used every day. The shop funds the sewing; the donations supply the cloth.</p>
+          <div class="hero-actions">
+            <a class="btn btn-thread" href="#donate" data-i18n="hero.donate">Donate denim</a>
+            <a class="btn btn-ghost" href="#shop" data-i18n="hero.shop">Shop the pouches</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="facts-title" data-i18n="about.numbers">In numbers</h3>
+          <ul class="facts" id="facts"></ul>
+        </div>
+      </div>
+      <div class="selvedge selvedge-end" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" data-page="about">
+      <div class="wrap why-grid">
+        <div>
+          <h2 data-i18n="about.why.title">Denim is too good to throw away</h2>
+          <p class="why-lead" data-i18n="why.lead">Jeans wear out at the knees and the seat. The rest of the cloth is still as strong as the day it was woven.</p>
+        </div>
+        <dl class="why-list">
+          <div><dt data-i18n="why.1.t">Built to last</dt><dd data-i18n="why.1.x">Denim is a tightly woven cotton twill, made for work. That strength is what makes it right for a bag that gets used every day.</dd></div>
+          <div><dt data-i18n="why.2.t">Costly to make</dt><dd data-i18n="why.2.x">Growing the cotton, dyeing it and weaving it takes a great deal of water and energy. Reusing a pair that already exists spends none of it again.</dd></div>
+          <div><dt data-i18n="why.3.t">Better with age</dt><dd data-i18n="why.3.x">Fading, creases and old stitch lines give each panel its own character. We keep them in, so no two pouches match.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section section-tint" data-page="about">
+      <div class="wrap">
+        <h2 data-i18n="values.title">What we hold to</h2>
+        <ul class="values">
+          <li><h3 data-i18n="values.1.t">Use what exists</h3><p data-i18n="values.1.x">We do not buy new denim. Every panel comes from something donated.</p></li>
+          <li><h3 data-i18n="values.2.t">Make it to last</h3><p data-i18n="values.2.x">Strong seams, cotton lining, proper zips. A pouch should outlive the jeans it came from.</p></li>
+          <li><h3 data-i18n="values.3.t">Stay small</h3><p data-i18n="values.3.x">Everything is cut and sewn in one workshop, in small batches, by people you can talk to.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" data-page="about">
+      <div class="wrap">
+        <h2 class="join-title" data-i18n="join.title">Three ways to take part</h2>
+        <ul class="home-links">
+          <li><a href="#donate"><h3 data-i18n="nav.donate">Donate denim</h3><p data-i18n="home.donate.text">Jeans, jackets, scraps. Any kind, any condition.</p></a></li>
+          <li><a href="#shop"><h3 data-i18n="nav.shop">Shop</h3><p data-i18n="home.shop.text">Pouches, totes and slings, each one different.</p></a></li>
+          <li><a href="#contact" data-topic="Collection drive"><h3 data-i18n="join.3.t">Run a collection drive</h3><p data-i18n="join.3.x">Collect denim at your school or office and we will arrange the rest.</p></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-tint page" id="contact" data-page="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-intro">
+          <h2 data-i18n="contact.title">Talk to us</h2>
+          <p data-i18n="contact.text">Bulk donations, school or office collection drives, custom orders. Ask us anything.</p>
+          <ul class="contact-list" id="contact-list"></ul>
+          <p class="note" data-i18n="contact.reply">We reply within two working days.</p>
+        </div>
+
+        <form class="card card-raised stitched contact-form" id="contact-form" name="contact-message" method="POST" data-netlify="true" netlify-honeypot="company" novalidate>
+          <input type="hidden" name="form-name" value="contact-message">
+          <p class="hp" aria-hidden="true"><label>Leave empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
+
+          <fieldset>
+            <legend data-i18n="contact.topic">What is it about?</legend>
+            <div class="chips">
+              <label><input type="radio" name="topic" value="Bulk donation" checked><span data-i18n="topic.bulk">Bulk donation</span></label>
+              <label><input type="radio" name="topic" value="Collection drive"><span data-i18n="topic.drive">Collection drive</span></label>
+              <label><input type="radio" name="topic" value="Custom order"><span data-i18n="topic.custom">Custom order</span></label>
+              <label><input type="radio" name="topic" value="Something else"><span data-i18n="topic.other">Something else</span></label>
+            </div>
+          </fieldset>
+
+          <div class="row">
+            <label class="field"><span data-i18n="form.name">Your name</span>
+              <input type="text" id="contact-name" name="name" required autocomplete="name">
+              <span class="error" id="err-c-name" hidden data-i18n="donate.errName">Add your name.</span>
+            </label>
+            <label class="field"><span data-i18n="donate.contact">Phone or email</span>
+              <input type="text" id="contact-contact" name="contact" required autocomplete="email">
+              <span class="error" id="err-c-contact" hidden data-i18n="donate.errContact">Add a phone number or email so we can confirm.</span>
+            </label>
+          </div>
+
+          <label class="field"><span data-i18n="contact.message">Your message</span>
+            <textarea id="contact-message" name="message" rows="4" required></textarea>
+            <span class="error" id="err-c-message" hidden data-i18n="contact.errMessage">Write a short message.</span>
+          </label>
+
+          <button class="btn btn-thread btn-block" type="submit" data-i18n="contact.send">Send message</button>
+          <p class="form-status" id="message-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer twill-deep">
+    <div class="selvedge" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="footer-cta" id="footer-cta">
+        <div>
+          <h2 data-i18n="footer.cta.title">Got denim you no longer wear?</h2>
+          <p data-i18n="footer.cta.text">One pair of jeans is enough to start.</p>
+        </div>
+        <a class="btn btn-thread" href="#donate" data-i18n="hero.donate">Donate denim</a>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="footer-logo" href="#home" aria-label="The Jean Pouch">
+            <svg class="footer-mark" viewBox="0 0 40 44" aria-hidden="true">
+          <path d="M3 3h34v26L20 41 3 29z" fill="#2f4b7c"/>
+          <path d="M7 7h26v20L20 36 7 27z" fill="none" stroke="#e0a53a" stroke-width="1.6" stroke-dasharray="3 2.4"/>
+          <circle cx="7" cy="7" r="2.2" fill="#b86a34"/><circle cx="33" cy="7" r="2.2" fill="#b86a34"/>
+        </svg>
+            <span>The Jean Pouch</span>
+          </a>
+          <p data-i18n="footer.about">A small sewing workshop turning unwanted denim into things people use every day.</p>
+        </div>
+        <nav class="footer-col" aria-labelledby="footer-explore">
+          <h3 id="footer-explore" data-i18n="footer.explore">Explore</h3>
+          <ul>
+            <li><a href="#home" data-i18n="nav.home">Home</a></li>
+            <li><a href="#how" data-i18n="nav.how">How it works</a></li>
+            <li><a href="#shop" data-i18n="nav.shop">Shop</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-labelledby="footer-give">
+          <h3 id="footer-give" data-i18n="footer.give">Ways to give</h3>
+          <ul>
+            <li><a href="#donate" data-method="Drop-off" data-i18n="footer.give1">Drop it off</a></li>
+            <li><a href="#donate" data-method="Pickup" data-i18n="footer.give2">Ask for a pickup</a></li>
+            <li><a href="#donate" data-method="Post" data-i18n="footer.give3">Send it by post</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h3 data-i18n="footer.reach">Reach us</h3>
+          <ul class="footer-contact" id="footer-contact"></ul>
+        </div>
+      </div>
+
+      <div class="footer-base">
+        <p>&copy; <span id="year"></span> The Jean Pouch. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <a href="#top" data-i18n="footer.top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="cart" id="cart" aria-labelledby="cart-title">
+    <div class="cart-head">
+      <h2 id="cart-title">Your bag</h2>
+      <button type="button" class="icon-btn" id="close-cart" aria-label="Close bag" data-i18n-label="cart.close">&times;</button>
+    </div>
+    <div class="cart-body" id="cart-view">
+      <ul class="cart-items" id="cart-items"></ul>
+      <p class="cart-empty" id="cart-empty"><span data-i18n="cart.empty">Your bag is empty.</span> <a href="#shop" id="cart-browse" data-i18n="cart.browse">Browse the shop</a></p>
+      <div class="cart-foot" id="cart-foot">
+        <p class="cart-total"><span data-i18n="cart.total">Total</span><strong id="cart-total">0</strong></p>
+        <p class="note" data-i18n="cart.delivery">Delivery is confirmed with you after ordering.</p>
+        <button type="button" class="btn btn-thread btn-block" id="to-checkout" data-i18n="cart.continue">Continue to order</button>
+      </div>
+    </div>
+    <form class="cart-body" id="checkout-form" hidden novalidate>
+      <label class="field"><span data-i18n="form.name">Your name</span>
+        <input type="text" id="checkout-name" name="name" required autocomplete="name">
+      </label>
+      <label class="field"><span data-i18n="checkout.phone">Phone</span>
+        <input type="tel" id="checkout-phone" name="phone" required autocomplete="tel">
+      </label>
+      <label class="field"><span data-i18n="checkout.address">Delivery address</span>
+        <textarea id="checkout-address" name="address" rows="3" required autocomplete="street-address"></textarea>
+      </label>
+      <p class="error" id="err-checkout" hidden data-i18n="checkout.err">Fill in your name, phone and address to place the order.</p>
+      <p class="cart-total"><span data-i18n="cart.total">Total</span><strong id="checkout-total">0</strong></p>
+      <button type="submit" class="btn btn-thread btn-block" id="place-order" data-i18n="checkout.place">Place order</button>
+      <button type="button" class="btn btn-plain btn-block" id="back-to-cart" data-i18n="checkout.back">Back to bag</button>
+      <p class="form-status" id="order-status" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
